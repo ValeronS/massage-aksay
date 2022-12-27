@@ -1,18 +1,27 @@
-<script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
-</script>
-
 <template>
-  <div class="content">test</div>
+  <div class="content">
+    <div class="background1"></div>
+  </div>
 </template>
 
-<style>
+<script setup>
+</script>
+
+<style scoped lang="less">
 .content {
-  top: 150px;
+  top: 120px;
 }
+
+.background1 {
+  background: url('@/assets/img/background1.jpg') no-repeat center bottom;
+  background-size: cover;
+  height: 800px;
+  opacity: 0.7;
+  width: 100%;
+  @media (max-width: @break_sm) {
+    background-size: contain;
+    height: 260px;
+  }
+}
+
 </style>

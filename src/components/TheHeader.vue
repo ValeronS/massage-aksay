@@ -1,10 +1,10 @@
 <template>
   <header>
-    <img alt="Logo" class="logo" src="@/assets/img/Logo.png" width="125" height="125" />
-
-    <div class="wrapper">
-      <Navbar msg="Массаж у Самвела" />
+    <div class="d-flex align-items-c">
+      <img alt="Logo" class="logo" src="@/assets/img/Logo.png"/>
+      <h1 class="orange">Массаж у Самвела</h1>
     </div>
+    <Navbar/>
   </header>
 </template>
 
@@ -12,33 +12,46 @@
 import Navbar from '@/components/Navbar.vue'
 </script>
 
-<style scoped>
+<style scoped lang="less">
 header {
   position: fixed;
+  top: 0;
   line-height: 1.5;
   width: 100%;
+  background-color: var(--vt-c-white-soft);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+  @media (max-width: @break_lg) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3px;
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--vt-c-black);
+  }
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  margin-right: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  @media (max-width: @break_xl) {
+    height: 50px;
+    width: 50px;
+  }
 }
 
-@media (min-width: 1024px) {
-  header {
-    padding: 20px;
-    display: flex;
-    place-items: center;
+h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  @media (max-width: @break_xl) {
+    font-size: 2rem;
   }
-
-  .logo {
-    margin: 0 2rem 0 0;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+  @media (max-width: @break_lg) {
+    font-size: 1.5rem;
   }
-
-  header .wrapper {
-    width: 100%;
-  }
-}</style>
+}
+</style>
