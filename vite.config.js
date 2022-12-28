@@ -15,7 +15,7 @@ export default defineConfig({
     preprocessorOptions: {
       less: {
           modifyVars: {
-            "primary-color": "#EB0A1E",
+            "primary-color": "#F2F2F2",
             "border-color-base": "#E0E0E0",
             "border-color-validate": "#F5C6CB",
             "bg-color-validate": "#F9E4E6",
@@ -29,15 +29,15 @@ export default defineConfig({
             black: "#000000",
             text2: "#58595B",
             text1: "#000000",
-            customColorBg: "#F6F6F6",
+            customColorBgLight: "#F6F6F6",
             customColorSuccess: "#1B8512",
             borderColor: "#E4E4E7",
 
-            break_xxl: "1370px",
+            break_xxl: "1200px",
             break_xl: "1024px",
-            break_lg: "865px",
-            break_md: "460px",
-            break_sm: "450px",
+            break_lg: "768px",
+            break_md: "480px",
+            break_sm: "320px",
           },
         },
     },

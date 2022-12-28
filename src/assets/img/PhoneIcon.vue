@@ -25,11 +25,11 @@
 .phoneIcon {
   fill: var(--vt-c-text-light-1);
 }
-@media (prefers-color-scheme: dark) {
-  .phoneIcon {
-    fill: var(--vt-c-text-dark-2);
-  }
-}
+/*@media (prefers-color-scheme: dark) {*/
+/*  .phoneIcon {*/
+/*    fill: var(--vt-c-text-dark-2);*/
+/*  }*/
+/*}*/
 
 </style>
 

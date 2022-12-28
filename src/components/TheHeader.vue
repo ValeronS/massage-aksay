@@ -14,22 +14,23 @@ import Navbar from '@/components/Navbar.vue'
 
 <style scoped lang="less">
 header {
-  position: fixed;
-  top: 0;
+  max-width: @break_xxl;
+  margin: 0 auto;
   line-height: 1.5;
   width: 100%;
   background-color: var(--vt-c-white-soft);
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 10px 20px;
+  padding: 20px;
   @media (max-width: @break_lg) {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 3px;
+    padding-bottom: 5px;
   }
-  @media (prefers-color-scheme: dark) {
-    background-color: var(--vt-c-black);
-  }
+  //@media (prefers-color-scheme: dark) {
+  //  background-color: var(--vt-c-black);
+  //}
 }
 
 .logo {
