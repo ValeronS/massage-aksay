@@ -2,6 +2,7 @@
   "name": "massage-aksay",
   "version": "0.0.0",
   "private": true,
+  "homepage": "massage-aksay.ru",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
