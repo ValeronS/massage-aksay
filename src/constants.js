@@ -66,5 +66,20 @@ export const massageCards = [
             src: new URL('/src/assets/img/vacuum-jar.jpg', import.meta.url),
             alt: 'vacuum-jar'
         },
+        last: 'true'
     }
+]
+
+export const certificates = [
+    [
+        {
+            src: new URL('/src/assets/img/diploma.jpg', import.meta.url),
+            alt: 'diploma'
+        },
+        {
+            src: new URL('/src/assets/img/diploma2.jpg', import.meta.url),
+            alt: 'diploma2'
+        }
+
+    ]
 ]

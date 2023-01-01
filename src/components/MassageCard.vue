@@ -1,14 +1,14 @@
 <template>
   <div class="card">
     <div class="grid">
-      <img :src='card.img.src' alt="imgSrc.alt" class="img">
+      <img :src='card.img.src' :alt="card.img.alt" class="img">
       <div class="desc">
         <h3 class="pt-8 title">{{ card.title }}</h3>
         <p class="pt-8" v-for="(p, idx) in card.text" :key="idx">{{ p }}</p>
         <p class="pt-8 font-w-5">Стоимость: {{ card.price }} рублей</p>
       </div>
     </div>
-    <hr class="hr w-80" />
+    <hr v-if="!card.last" class="hr w-80" />
   </div>
 </template>
 
