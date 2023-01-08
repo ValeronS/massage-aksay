@@ -1,23 +1,23 @@
 <template>
-  <div class="card">
-    <div class="grid">
-      <img v-for="(item, idx) in card" :src='item.src' :alt="item.alt" :key="idx"
-           :class="{ img: true, second: idx === 1 }">
+  <div class='card'>
+    <div class='grid'>
+      <img v-for='(item, idx) in card' :src='item.src' :alt='item.alt' :key='idx'
+           :class='{ img: true, second: idx === 1 }'>
     </div>
   </div>
 </template>
 
 <script setup>
-const {imgSrc} = defineProps({
+const { imgSrc } = defineProps({
   card: {
     type: Array,
-    required: true
+    required: true,
   },
-})
+});
 
 </script>
 
-<style lang="less" scoped>
+<style lang='less' scoped>
 .card {
   max-width: @break_xxl;
   margin: 20px auto 0 auto;
@@ -44,7 +44,7 @@ const {imgSrc} = defineProps({
   }
 
   .second {
-    padding-top: 20px;
+    margin-top: 20px;
 
     @media (min-width: @break_lg) {
       padding-top: 0;

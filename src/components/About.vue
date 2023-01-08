@@ -1,8 +1,8 @@
 <template>
-  <div class="about">
-    <img :src='imgSrc.src' :alt="imgSrc.alt" class="img">
-    <div class="desc">
-      <p class="pt-8" v-for="(p, idx) in text" :key="idx">{{ p }}</p>
+  <div class='about'>
+    <img :src='imgSrc.src' :alt='imgSrc.alt' class='img'>
+    <div class='desc'>
+      <p class='pt-8' v-for='(p, idx) in text' :key='idx'>{{ p }}</p>
     </div>
   </div>
 </template>
@@ -11,17 +11,17 @@
 const { imgSrc } = defineProps({
   imgSrc: {
     type: Object,
-    required: true
+    required: true,
   },
   text: {
     type: Array,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
 </script>
 
-<style lang="less" scoped>
+<style lang='less' scoped>
 .about {
   max-width: @break_xxl;
   margin: 20px auto 0 auto;
