@@ -18,6 +18,7 @@
   flex-direction: column;
   align-items: center;
   .map {
+    max-width: @break_xxl;
     border-radius: 5px;
 
     @media (min-width: @break_lg) {

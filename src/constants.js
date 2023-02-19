@@ -17,7 +17,7 @@ export const textsAbout = [
   ],
   [
     'С древних времён массаж являлся одним из самых эффективных методов снятия напряжения и боли. До сих пор мало что поменялось, т.к. массаж и сегодня является одним из эффективнейших методов в этом изобилие телесных практик',
-    'Все слышали выражение \'движение - жизнь\'. Но с веком технологического прогресса и внедрения электроники, физические нагрузки у нас сократились, а движение практически остановилось',
+    "Все слышали выражение 'движение - жизнь'. Но с веком технологического прогресса и внедрения электроники, физические нагрузки у нас сократились, а движение практически остановилось",
     'Компьютеры, телефоны. Сидячий образ жизни буквой ЗЮ. Какая спина и шея выдержит?',
     'Массаж очень эффективно и максимально безопасно справляется со своей задачей (конечно же учитывая все имеющиеся противопоказания)',
     'Улучшает обменные процессы, и помогает бережно вывести из организма продукты распада, токсины, лишнюю жидкость, подтянуть подвисшую, дряблую кожу',
@@ -125,7 +125,6 @@ export const massageCards = [
       src: new URL('/src/assets/img/relax-massage.jpg', import.meta.url),
       alt: 'Релакс массаж',
     },
-
   },
   {
     title: 'Антицеллюлитный + массаж бамбуковыми вениками',
@@ -139,7 +138,6 @@ export const massageCards = [
       src: new URL('/src/assets/img/bamboo-broom.jpg', import.meta.url),
       alt: 'Антицеллюлитный + массаж бамбуковыми вениками',
     },
-
   },
   {
     title: 'Антицеллюлитный + баночный массаж',
@@ -200,14 +198,25 @@ export const certificates = [
       alt: 'diploma_8',
     },
   ],
-  [
-    {
-      src: new URL('/src/assets/img/diplomas/diploma_9.jpg', import.meta.url),
-      alt: 'diploma_9',
-    },
-    {
-      src: new URL('/src/assets/img/diplomas/diploma_10.jpg', import.meta.url),
-      alt: 'diploma_10',
-    },
-  ],
+];
+
+export const messengerIcons = [
+  {
+    src: new URL('/src/assets/img/whats-app.png', import.meta.url),
+    alt: 'whats-app',
+    href: 'https://wa.me/+79381637099?text=Здравствуйте%2C+запишите+меня+пожалуйста+на+сеанс',
+    text: 'Написать в WhatsApp',
+  },
+  {
+    src: new URL('/src/assets/img/telegramIcon.png', import.meta.url),
+    alt: 'telegram-icon',
+    href: 'https://t.me/+79381637099',
+    text: 'Написать в Telegram',
+  },
+  {
+    src: new URL('/src/assets/img/vkIcon.png', import.meta.url),
+    alt: 'vk-icon',
+    href: 'https://vk.com/massageaksay',
+    text: 'Страница ВКонтакте',
+  },
 ];

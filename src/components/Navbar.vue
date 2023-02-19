@@ -1,6 +1,6 @@
 <template>
   <div class="greetings">
-    <h3>
+    <h3 d-flex align-items-c just-c-c>
       <PhoneIcon/>
       <a href="tel:+79381637099" class="pl-2">8-938-163-70-99</a>
     </h3>

@@ -1,35 +1,42 @@
 <template>
-  <div class='services'>
-    <h2 class='mt-12 mb-12 pt-8 text-c'>Услуги и цены</h2>
-    <div class='mb-12  d-flex align-items-c flex-d-column'>
-      <table class='table'>
+  <div class="services">
+    <h2 class="mt-4 mb-12 pt-8 text-c">Услуги и цены</h2>
+    <div class="mb-12 pl-2 pr-2 d-flex align-items-c flex-d-column">
+      <table class="table">
         <tr>
           <th>Вид массажа</th>
           <th>Длительность</th>
           <th>Стоимость</th>
         </tr>
-        <tr v-for='(row, idx) in prices' :key='idx'>
-          <td :rowspan='prices[idx]?.name === prices[idx + 1]?.name ? 2 : 1'
-              v-if='prices[idx]?.name !== prices[idx - 1]?.name'>{{ row.name }}
+        <tr v-for="(row, idx) in prices" :key="idx">
+          <td
+            :rowspan="prices[idx]?.name === prices[idx + 1]?.name ? 2 : 1"
+            v-if="prices[idx]?.name !== prices[idx - 1]?.name"
+          >
+            {{ row.name }}
           </td>
-          <td class='text-c'>{{ row.duration }} мин</td>
-          <td class='text-c'>{{ row.price }}₽</td>
+          <td class="text-c">{{ row.duration }} мин</td>
+          <td class="text-c">{{ row.price }}₽</td>
         </tr>
       </table>
     </div>
-    <MassageCard v-for='(item, idx) in massageCards' :card='item' :key='idx + 1' />
+    <Contacts />
+    <MassageCard
+      v-for="(item, idx) in massageCards"
+      :card="item"
+      :key="idx + 1"
+    />
   </div>
 </template>
 
 <script setup>
+import Contacts from '@/components/Contacts.vue';
 import MassageCard from '@/components/MassageCard.vue';
 import { prices, massageCards } from '@/constants';
-
 </script>
 
-<style lang='less' scoped>
+<style lang="less" scoped>
 .services {
-
   .table {
     border-collapse: collapse;
     border: 3px solid @borderColor;
@@ -49,6 +56,5 @@ import { prices, massageCards } from '@/constants';
       background-color: #fff;
     }
   }
-
 }
 </style>
