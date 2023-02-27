@@ -1,17 +1,18 @@
 <template>
   <div class="content">
     <div class="background">
-      <div class="back-dark"/>
+      <div class="back-dark" />
       <div class="description">
         <div class="title">Студия профессионального массажа в городе Аксай</div>
-        <div class="subtitle">Наши эмоции и чувства — ключ к здоровой жизни.</div>
+        <div class="subtitle">
+          Наши эмоции и чувства — ключ к здоровой жизни
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped lang="less">
 .content {

@@ -1,15 +1,15 @@
 <template>
   <header>
     <div class="d-flex align-items-c">
-      <img alt="Logo" class="logo" src="@/assets/img/Logo.png"/>
-      <h1 class="orange">Массаж у Самвела</h1>
+      <img alt="Logo" class="logo" src="@/assets/img/Logo.png" />
+      <h1 class="orange">Массаж в Аксае</h1>
     </div>
-    <Navbar/>
+    <Navbar />
   </header>
 </template>
 
 <script setup>
-import Navbar from '@/components/Navbar.vue'
+import Navbar from '@/components/Navbar.vue';
 </script>
 
 <style scoped lang="less">

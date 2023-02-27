@@ -20,7 +20,6 @@
         </tr>
       </table>
     </div>
-    <Contacts />
     <MassageCard
       v-for="(item, idx) in massageCards"
       :card="item"
@@ -30,7 +29,6 @@
 </template>
 
 <script setup>
-import Contacts from '@/components/Contacts.vue';
 import MassageCard from '@/components/MassageCard.vue';
 import { prices, massageCards } from '@/constants';
 </script>
